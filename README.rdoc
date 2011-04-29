@@ -1,0 +1,6 @@
+Crie um sistema web de TODO list. Os requisitos são por sua conta.
+
+Restrições:
+
+Usando Rails 3
+Usando MongoDB
