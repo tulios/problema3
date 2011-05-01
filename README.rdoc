@@ -4,3 +4,8 @@ Restrições:
 
 Usando Rails 3
 Usando MongoDB
+
+= Subindo
+
+  mongod
+  

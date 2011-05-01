@@ -1,0 +1,12 @@
+h1 List
+span = @list.name
+            
+ul
+  - @list.todos.each do |todo|
+    li
+      = check_box_tag 'finished', todo.finished
+      = todo.description
+
+= form_for @todo, :url => list_todos_path(current_user.nickname, @list, @todo) do |f|
+  = f.text_field :description
+  = f.submit
