@@ -1,0 +1,6 @@
+#primary_menu
+  - if logged_in?
+    ul
+      li = current_user.nickname
+      li.img = image_tag current_user.image_url
+      li = link_to 'Logout', logout_path

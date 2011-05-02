@@ -1,0 +1,4 @@
+li
+  span.created_at = l list.created_at
+  = link_to list.name, list_path(current_user.nickname, list), :class => :show_list
+  = link_to '', list_path(current_user.nickname, list), :method => :delete, :remote => true, :class => :destroy_list

@@ -3,6 +3,13 @@ class ApplicationController < ActionController::Base
   
   helper_method :current_user, :logged_in?
   
+  protected
+  
+  def redirect_if_not_logged_in
+    redirect_to root_path unless logged_in?
+    return
+  end
+  
   private
   
   def current_user

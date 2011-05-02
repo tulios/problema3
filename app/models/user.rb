@@ -7,5 +7,10 @@ class User
   key :last_login, Time
   
   many :authentications
-  many :lists
+  many :lists, :order => 'created_at'
+  
+  def image_url
+    authentications.first.image
+  end
+  
 end

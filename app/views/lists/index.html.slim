@@ -1,16 +1,14 @@
-- if logged_in?
-  .msg
-    span Bem-vindo, #{current_user.nickname}
-    span = link_to 'Logout', logout_path
-
-h1 lists
-
-ul
-  - current_user.lists.each do |list|
-    li = link_to list.name, list_path(current_user.nickname, list)
-
-h1 New List
-= form_for @list do |f|
-  = f.text_field :name
-  = f.submit
+- content_for :javascript do
+  = javascript_include_tag 'views/lists/index'
   
+- content_for :subpage do
+  #subpage_banner
+    .content
+      h1 = t('app.lists')
+
+.subpage.box
+  
+  = render :partial => 'lists/form'
+  
+  ul.lists
+    = render :partial => 'lists/list', :collection => @lists

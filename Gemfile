@@ -9,6 +9,7 @@ gem 'jquery-rails', '>= 0.2.6'
 gem 'omniauth', '~> 0.2.5'
 gem 'json', '~> 1.5.1'
 gem 'stringex', '~> 1.2.0'
+gem 'cancan', '~> 1.6.4'
 
 group :development, :test do
   gem 'rspec-rails',             '~> 2.5.0'

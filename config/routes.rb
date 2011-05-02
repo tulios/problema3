@@ -6,8 +6,8 @@ Problema3::Application.routes.draw do
   match '/:nickname' => redirect('/')
   
   scope ":nickname" do
-    resources :lists, :except => :new do
-      resources :todos, :only => :create
+    resources :lists, :except => [:new, :edit, :update] do
+      resources :todos, :only => [:create, :update, :destroy]
     end
   end
   

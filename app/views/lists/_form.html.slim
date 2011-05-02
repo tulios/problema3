@@ -1,0 +1,9 @@
+= link_to t('app.new_list'), "#new_list", :class => :new_list_link
+
+.new_list_div
+  = form_for @list, :remote => true do |f|
+    .field
+      = f.text_field :name
+    .field
+      = f.submit t('app.save'), :class => :save_list
+      = link_to t('app.cancel'), '#cancel_save_list', :class => :cancel_save_list

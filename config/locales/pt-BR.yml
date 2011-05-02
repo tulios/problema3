@@ -1,3 +1,19 @@
 'pt-BR':
+  time:
+    formats:
+      default: "%d/%b %k:%m"
+      
   app:
-    title: 'Todo List'
+    title: 'My Task List'
+    succesfully_destroyed: 'Apagado com sucesso.'
+    
+    lists: 'Listas'
+    list: 'Lista'
+    new_list: "Nova Lista"
+    empty_list: "Nenhum to-do cadastrado."
+    
+    todos: "TO-DO:"
+    new_todo: 'Novo To-do'
+    
+    save: "Salvar"
+    cancel: "Cancelar"

@@ -14,11 +14,20 @@ html
     = stylesheet_link_tag :all
     = stylesheet_link_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css'
     = yield :css
-
-    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'
+                
+    = javascript_include_tag :defaults
+    - javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'
     = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js'
-    = javascript_include_tag 'application'
     = yield :javascript
 
   body
-    = yield
+    
+    .messages
+      .text
+  
+    #wrapper
+      #header = render :partial => 'layouts/header'
+      #header_space
+      = yield :subpage
+      #body = render :partial => 'layouts/body'
+      #footer = render :partial => 'layouts/footer'

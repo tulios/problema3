@@ -1,12 +1,21 @@
-h1 List
-span = @list.name
-            
-ul
-  - @list.todos.each do |todo|
-    li
-      = check_box_tag 'finished', todo.finished
-      = todo.description
+- content_for :javascript do
+  = javascript_include_tag 'plugins/customInput.jquery'
+  = javascript_include_tag 'views/lists/show'
 
-= form_for @todo, :url => list_todos_path(current_user.nickname, @list, @todo) do |f|
-  = f.text_field :description
-  = f.submit
+- content_for :subpage do
+  #subpage_banner
+    .content
+      h1 #{t('app.list')} &raquo; #{@list.name}
+
+.subpage.box
+        
+  - if can? :create, Todo
+    = render :partial => 'todos/form'
+  
+  h1 = t('app.todos')
+  
+  ul.todos
+    - unless @list.todos.blank?
+      = render :partial => 'todos/todo', :collection => @list.todos
+    - else
+      li.empty_list = t("app.empty_list")

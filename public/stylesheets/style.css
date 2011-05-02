@@ -1,0 +1,308 @@
+.messages {
+	display: none;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.messages .text {
+	text-align: left;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.notice {
+	background-color: #34E0A0;
+}
+
+.error {
+  background-color: #A12E14; /*#CC2C00;*/
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+#header {
+  background: #212121 url('/images/layout/bg_head.gif') repeat-x 0% 0%;;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#header_space {
+  height: 54px;
+}
+
+#logo {
+	width: 20%;
+	float: left;
+}
+
+#logo h1 {
+	font-size: 32px;
+	color: white;
+	text-shadow: 2px 2px 1px #9E9899;
+	-moz-text-shadow: 2px 2px 1px #9E9899;
+	-web-text-shadow: 2px 2px 1px #9E9899;
+	margin-top: 5px;
+}
+
+#primary_menu {
+	float: right;
+	color: white;
+}
+
+#primary_menu li {
+	float: left;
+	list-style-type: none;
+	margin-top: 18px;
+}
+
+#primary_menu li.img { 
+	margin: auto;
+	padding: 0;
+	border: 1px solid black;
+  -moz-box-shadow: 0 1px 3px #AAA;
+  -o-box-shadow: 0 1px 3px #AAA;
+  -webkit-box-shadow: 0 1px 3px #AAA;
+  -khtml-box-shadow: 0 1px 3px #AAA;
+  box-shadow: 0 1px 3px #AAA;
+}
+
+.content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.clear {
+  clear: both;
+}
+
+.box_wrapper { 
+  padding: 17px;                                                                                                                    
+  margin:0 0 50px 0;
+  border: 1px solid #ccc; 
+  border:1px solid rgba(255,255,255,1); 
+  box-shadow:0 0 5px #bbb;
+  -moz-box-shadow:0 0 5px #bbb; 
+  -webkit-box-shadow:0 0 5px #bbb;
+  background: #f5f5f5;
+  background:-moz-linear-gradient(top, #f5f5f5, #f0f0f0); 
+  background:-webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f0f0f0));                                                      
+}
+
+.box_wrapper p, .box_wrapper em  { 
+  font-family: georgia, serif; 
+  font-style: italic; 
+  color: #888; 
+  text-shadow: 1px 0px #fff; 
+  font-size: 13px; 
+  text-align: justify; 
+  margin: 0; 
+  line-height: 1.5em;
+}
+
+#subpage_banner { 
+  height: 0px; 
+  padding: 40px 0 60px 0; 
+  background: #0CB1F2; 
+  border-bottom: 1px solid #77D3F7; 
+  border-top: 1px solid #77D3F7;
+}
+#subpage_banner:after { 
+  display:block; 
+  content: ""; 
+  position: relative; 
+  top:80px; 
+  height:1px;
+}
+
+#subpage_banner h1 { 
+  font-weight: bold;
+  margin-top: 3px; 
+  line-height: 0px;
+  margin-left: 20px; 
+	font-size: 40px;
+}
+
+.content .subpage { 
+  background: #fff; 
+  margin-top: -15px;
+  padding-top: 30px;
+  padding: 30px 30px;
+  position: relative;
+  -moz-box-shadow: 0 0 3px rgba(0,0,0,0.3); 
+  -webkit-box-shadow:0 0 3px rgba(0,0,0,0.3); 
+  -box-shadow:0 0 3px rgba(0,0,0,0.3); 
+  border: 1px solid #ccc; 
+  border: 1px solid rgba(0,0,0,0);
+  min-height: 350px;
+}
+
+.box {
+  padding: 5px 25px 15px 25px; 
+  background:#efefef; 
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.box label {
+  display:block; 
+  font-size:12px; 
+  margin:15px 0 5px 0;
+  color:#000; 
+  font-weight:bold;
+}
+.box textarea {
+  width:98%;
+  font-family:helvetica, arial, sans-serif; 
+  padding:7px; 
+  font-size:14px;
+}
+.box select {font-size:13px; padding:1px;margin:4px 0 10px 0}
+.box input[type="text"] { 
+  padding: 10px 20px; 
+  font-size: 14px;    
+  width: 88%;
+}
+
+.lists li {
+	font-size: 20px;
+	padding: 10px;
+	border: 1px solid #999;
+	border-radius: 5px;
+  -moz-border-radius: 5px;
+  -web-border-radius: 5px;
+}
+
+.lists .created_at {
+	margin-right: 10px;
+	color: #999;
+}
+
+.lists li:hover .destroy_list,
+.todos li:hover .destroy_todo {
+	background: url(/images/cancel_16.png);
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: right;
+	margin-top: 4px;
+}
+
+.new_list_div {
+	display: none;
+}
+
+.new_list_link {
+	margin: 10px;
+}
+
+.new_list {
+	margin: 10px;
+}
+
+.save_list {
+	margin-right: 10px !important;
+}                              
+
+.todos {
+	margin-top: 10px;
+}
+
+.empty_list {
+	font-size: 20px;
+	font-style: italic;
+}
+
+.new_todo_link {
+	margin-bottom: 10px;
+}
+
+.new_todo_div {
+	display: none;
+	margin-bottom: 10px;
+}
+
+.save_todo {
+	margin-right: 10px !important;
+}                              
+
+.custom-checkbox {
+	position: relative;
+	float: left;
+}
+	
+.custom-checkbox input { 
+	position: absolute;
+	left: 2px;
+	top: 3px;
+	margin: 0;
+	z-index: 0;
+}
+
+.custom-checkbox label { 
+	display: block;
+	position: relative;
+	z-index: 1;
+	font-size: 1.3em;
+	padding-right: 1em;
+	line-height: 1;
+	padding: .5em 0 .5em 30px;
+	margin: 0 0 .3em;
+	cursor: pointer;
+}
+
+.custom-checkbox label {
+	background: url(/images/checkbox.gif) no-repeat; 
+	background-position: -10px -14px;
+	padding-top: 4px;
+}
+
+.custom-checkbox label.hover,
+.custom-checkbox label.focus {
+	background-position: -10px -114px;
+}
+
+.custom-checkbox label.checked {
+	background-position: -10px -214px;
+}
+
+.custom-checkbox label.checkedHover, 
+.custom-checkbox label.checkedFocus {
+	background-position: -10px -314px;
+}
+
+.custom-checkbox label.focus {
+	outline: 1px dotted #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,35 @@
 en:
+  mongo_mapper:
+    models:
+      list: "List"
+      todo: 'To-Do'
+    attributes:
+      list:
+        todos: "To-Do"
+        
+    errors:
+      models:
+        todo:
+        list:
+          attributes:
+            todos:
+              invalid: "Can't be blank"
+  
+  time:
+    formats:
+      default: "%d/%b %k:%m"
+      
   app:
-    title: 'Todo List'
+    title: 'My Task List'
+    succesfully_destroyed: 'Successfully deleted.'
+    
+    lists: 'Lists'
+    list: 'List'
+    new_list: "New List"
+    empty_list: "No to-do registered."
+    
+    todos: "TO-DO:"
+    new_todo: 'New To-do'
+    
+    save: "Save"
+    cancel: "Cancel"

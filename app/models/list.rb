@@ -3,13 +3,16 @@ class List
   
   before_save :generates_friendly_id
 
-  key :name, String
+  key :name, String, :required => true
   key :friendly_id, String
   
   belongs_to :user
   timestamps!
   
   many :todos
+  
+  validates_uniqueness_of :name, :scope => :user_id
+  validates_associated :todos
   
   def to_param
     friendly_id

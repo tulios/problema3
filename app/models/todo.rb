@@ -4,4 +4,6 @@ class Todo
   key :description, String
   key :finished, Boolean, :default => false
   
+  validates_presence_of :description
+  
 end

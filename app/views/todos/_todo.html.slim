@@ -1,0 +1,8 @@
+li id="todo_li_#{todo.id}"
+  fieldset
+    = check_box_tag 'finished', 'true', todo.finished, :id => "todo_#{todo.id}", :class => :todo_check
+    label for="todo_#{todo.id}" #{todo.description}
+    - if can? :destroy, Todo
+      = hidden_field_tag "url", list_todo_path(current_user.nickname, @list, todo), :id => "url_#{todo.id}"
+      = link_to '', list_todo_path(current_user.nickname, @list, todo), \
+                :method => :delete, :remote => true, :class => :destroy_todo
