@@ -21,6 +21,10 @@ class List
   private
   def generates_friendly_id
     @friendly_id = @name.to_url
+    if @friendly_id.blank?
+      errors.add(:name, "'#{@name}' is not valid!")
+      return false
+    end
   end
   
 end
