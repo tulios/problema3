@@ -7,5 +7,5 @@ Usando MongoDB
 
 = Subindo
 
-  Configure o arquivo config/omniauth.rb
+  Configure o arquivo config/initializers/omniauth.rb
   
