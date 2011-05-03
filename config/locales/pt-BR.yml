@@ -6,6 +6,7 @@
   app:
     title: 'My Task List'
     succesfully_destroyed: 'Apagado com sucesso.'
+    succesfully_checked: 'Marcado com sucesso.'
     
     lists: 'Listas'
     list: 'Lista'

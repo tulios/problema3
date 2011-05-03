@@ -19,7 +19,7 @@ class TodosController < ApplicationController
     @todo.finished = @todo.finished ? false : true
     @list.save
     
-    render :nothing => true
+    render :text => t("app.succesfully_checked")
   end
   
   def destroy

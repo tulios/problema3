@@ -22,6 +22,7 @@ en:
   app:
     title: 'My Task List'
     succesfully_destroyed: 'Successfully deleted.'
+    succesfully_checked: 'Successfully checked.'
     
     lists: 'Lists'
     list: 'List'

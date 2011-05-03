@@ -1,11 +1,14 @@
-.messages {
+.messages_div {
+}
+
+.message {
 	display: none;
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-.messages .text {
+.message .text {
 	text-align: left;
 	margin-left: 20px;
 	font-weight: bold;

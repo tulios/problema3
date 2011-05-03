@@ -7,12 +7,11 @@ function show_notice(message) {
 }
 
 function show_message(message, css_class){
-	$(".messages").hide();
-	$(".messages").addClass(css_class);
-	$(".messages .text").html(message);
+	var new_message = $("<div class='message "+css_class+"'><div class='text'>"+message+"</div></div>");
+	new_message.hide();
+	new_message.appendTo($(".messages_div"));
 	
-	$(".messages").slideDown("slow").delay(3000).slideUp("slow", function(){
-		$(".messages .text").html("");
-		$(".messages").removeClass(css_class);
+	new_message.slideDown("slow").delay(1000).slideUp("slow", function(){
+		new_message.remove();
 	});
 }

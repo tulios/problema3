@@ -59,7 +59,8 @@ var todos = {
 				$.ajax({
 					url: action,
 					type: 'PUT',
-					success: function() {
+					success: function(data) {
+						show_notice(data);
 					}
 				});
 			}
