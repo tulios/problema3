@@ -9155,3 +9155,582 @@ Started POST "/tulios/lists/lista-picheme/todos" for 127.0.0.1 at Mon May 02 20:
   Parameters: {"commit"=>"Save", "nickname"=>"tulios", "authenticity_token"=>"3rqynhK7oduhDOKC7jtfy2sRlRZTj+w+8Ju7r2fyAlo=", "utf8"=>"✓", "list_id"=>"lista-picheme", "todo"=>{"description"=>""}}
 Rendered text template (0.0ms)
 Completed 200 OK in 38ms (Views: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:00:11 -0300 2011
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/tulios/lists
+Completed 302 Found in 15ms
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:00:11 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (8.8ms)
+Rendered lists/_list.html.slim (11.7ms)
+Rendered layouts/_logo.html.slim (6.2ms)
+Rendered layouts/_primary_menu.html.slim (7.5ms)
+Rendered layouts/_header.html.slim (23.2ms)
+Rendered layouts/_body.html.slim (4.7ms)
+Rendered layouts/_footer.html.slim (3.8ms)
+Rendered lists/index.html.slim within layouts/application (94.9ms)
+Completed 200 OK in 212ms (Views: 102.1ms)
+
+
+Started DELETE "/tulios/lists/nova-lista" for 127.0.0.1 at Mon May 02 21:00:13 -0300 2011
+  Processing by ListsController#destroy as JS
+  Parameters: {"nickname"=>"tulios", "id"=>"nova-lista"}
+Rendered text template (0.0ms)
+Completed 200 OK in 32ms (Views: 1.0ms)
+
+
+Started DELETE "/tulios/lists/asdasd" for 127.0.0.1 at Mon May 02 21:00:14 -0300 2011
+  Processing by ListsController#destroy as JS
+  Parameters: {"nickname"=>"tulios", "id"=>"asdasd"}
+Rendered text template (0.0ms)
+Completed 200 OK in 35ms (Views: 1.1ms)
+
+
+Started DELETE "/tulios/lists/outra-lista" for 127.0.0.1 at Mon May 02 21:00:14 -0300 2011
+  Processing by ListsController#destroy as JS
+  Parameters: {"nickname"=>"tulios", "id"=>"outra-lista"}
+Rendered text template (0.0ms)
+Completed 200 OK in 33ms (Views: 1.1ms)
+
+
+Started DELETE "/tulios/lists/lista-1" for 127.0.0.1 at Mon May 02 21:00:14 -0300 2011
+  Processing by ListsController#destroy as JS
+  Parameters: {"nickname"=>"tulios", "id"=>"lista-1"}
+Rendered text template (0.0ms)
+Completed 200 OK in 115ms (Views: 1.1ms)
+
+
+Started DELETE "/tulios/lists/lista-picheme" for 127.0.0.1 at Mon May 02 21:00:15 -0300 2011
+  Processing by ListsController#destroy as JS
+  Parameters: {"nickname"=>"tulios", "id"=>"lista-picheme"}
+Rendered text template (0.0ms)
+Completed 200 OK in 32ms (Views: 1.0ms)
+
+
+Started POST "/tulios/lists" for 127.0.0.1 at Mon May 02 21:00:20 -0300 2011
+  Processing by ListsController#create as JS
+  Parameters: {"commit"=>"Save", "list"=>{"name"=>"List 1"}, "nickname"=>"tulios", "authenticity_token"=>"3rqynhK7oduhDOKC7jtfy2sRlRZTj+w+8Ju7r2fyAlo=", "utf8"=>"✓"}
+Rendered lists/_list.html.slim (6.8ms)
+Completed 200 OK in 45ms (Views: 11.1ms)
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:00:50 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (8.5ms)
+Rendered lists/_list.html.slim (6.7ms)
+Rendered layouts/_logo.html.slim (6.1ms)
+Rendered layouts/_primary_menu.html.slim (7.5ms)
+Rendered layouts/_header.html.slim (22.8ms)
+Rendered layouts/_body.html.slim (5.2ms)
+Rendered layouts/_footer.html.slim (4.0ms)
+Rendered lists/index.html.slim within layouts/application (87.3ms)
+Completed 200 OK in 207ms (Views: 95.3ms)
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:00:52 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (8.7ms)
+Rendered lists/_list.html.slim (7.3ms)
+Rendered layouts/_logo.html.slim (6.1ms)
+Rendered layouts/_primary_menu.html.slim (7.6ms)
+Rendered layouts/_header.html.slim (22.8ms)
+Rendered layouts/_body.html.slim (5.2ms)
+Rendered layouts/_footer.html.slim (4.0ms)
+Rendered lists/index.html.slim within layouts/application (174.2ms)
+Completed 200 OK in 206ms (Views: 181.3ms)
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:01:24 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (10.0ms)
+Rendered lists/_list.html.slim (32.5ms)
+Rendered layouts/_logo.html.slim (6.4ms)
+Rendered layouts/_primary_menu.html.slim (7.9ms)
+Rendered layouts/_header.html.slim (24.9ms)
+Rendered layouts/_body.html.slim (5.2ms)
+Rendered layouts/_footer.html.slim (4.8ms)
+Rendered lists/index.html.slim within layouts/application (151.6ms)
+Completed 200 OK in 1673ms (Views: 162.0ms)
+
+
+Started POST "/tulios/lists" for 127.0.0.1 at Mon May 02 21:01:34 -0300 2011
+  Processing by ListsController#create as JS
+  Parameters: {"commit"=>"Save", "list"=>{"name"=>"List 2"}, "nickname"=>"tulios", "authenticity_token"=>"3rqynhK7oduhDOKC7jtfy2sRlRZTj+w+8Ju7r2fyAlo=", "utf8"=>"✓"}
+Rendered lists/_list.html.slim (6.9ms)
+Completed 200 OK in 48ms (Views: 11.4ms)
+
+
+Started GET "/tulios/lists/list-1" for 127.0.0.1 at Mon May 02 21:01:46 -0300 2011
+  Processing by ListsController#show as HTML
+  Parameters: {"nickname"=>"tulios", "id"=>"list-1"}
+Rendered todos/_form.html.slim (8.4ms)
+Rendered layouts/_logo.html.slim (6.2ms)
+Rendered layouts/_primary_menu.html.slim (88.4ms)
+Rendered layouts/_header.html.slim (103.8ms)
+Rendered layouts/_body.html.slim (5.3ms)
+Rendered layouts/_footer.html.slim (4.9ms)
+Rendered lists/show.html.slim within layouts/application (156.5ms)
+Completed 200 OK in 197ms (Views: 163.8ms)
+
+
+Started POST "/tulios/lists/list-1/todos" for 127.0.0.1 at Mon May 02 21:01:51 -0300 2011
+  Processing by TodosController#create as JS
+  Parameters: {"commit"=>"Save", "nickname"=>"tulios", "authenticity_token"=>"3rqynhK7oduhDOKC7jtfy2sRlRZTj+w+8Ju7r2fyAlo=", "utf8"=>"✓", "list_id"=>"list-1", "todo"=>{"description"=>"To-do 1"}}
+Rendered todos/_todo.html.slim (11.1ms)
+Completed 200 OK in 51ms (Views: 15.6ms)
+
+
+Started POST "/tulios/lists/list-1/todos" for 127.0.0.1 at Mon May 02 21:01:57 -0300 2011
+  Processing by TodosController#create as JS
+  Parameters: {"commit"=>"Save", "nickname"=>"tulios", "authenticity_token"=>"3rqynhK7oduhDOKC7jtfy2sRlRZTj+w+8Ju7r2fyAlo=", "utf8"=>"✓", "list_id"=>"list-1", "todo"=>{"description"=>"To-do 2"}}
+Rendered todos/_todo.html.slim (11.3ms)
+Completed 200 OK in 136ms (Views: 100.2ms)
+
+
+Started POST "/tulios/lists/list-1/todos" for 127.0.0.1 at Mon May 02 21:02:03 -0300 2011
+  Processing by TodosController#create as JS
+  Parameters: {"commit"=>"Save", "nickname"=>"tulios", "authenticity_token"=>"3rqynhK7oduhDOKC7jtfy2sRlRZTj+w+8Ju7r2fyAlo=", "utf8"=>"✓", "list_id"=>"list-1", "todo"=>{"description"=>"To-do 3"}}
+Rendered todos/_todo.html.slim (11.3ms)
+Completed 200 OK in 51ms (Views: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:02:08 -0300 2011
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/tulios/lists
+Completed 302 Found in 16ms
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:02:08 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (8.8ms)
+Rendered lists/_list.html.slim (8.4ms)
+Rendered layouts/_logo.html.slim (6.0ms)
+Rendered layouts/_primary_menu.html.slim (7.5ms)
+Rendered layouts/_header.html.slim (22.8ms)
+Rendered layouts/_body.html.slim (4.7ms)
+Rendered layouts/_footer.html.slim (3.9ms)
+Rendered lists/index.html.slim within layouts/application (89.4ms)
+Completed 200 OK in 207ms (Views: 96.5ms)
+
+
+Started GET "/tulios/lists/list-1" for 127.0.0.1 at Mon May 02 21:02:09 -0300 2011
+  Processing by ListsController#show as HTML
+  Parameters: {"nickname"=>"tulios", "id"=>"list-1"}
+Rendered todos/_form.html.slim (8.7ms)
+Rendered todos/_todo.html.slim (10.2ms)
+Rendered layouts/_logo.html.slim (5.9ms)
+Rendered layouts/_primary_menu.html.slim (7.5ms)
+Rendered layouts/_header.html.slim (22.4ms)
+Rendered layouts/_body.html.slim (4.7ms)
+Rendered layouts/_footer.html.slim (3.9ms)
+Rendered lists/show.html.slim within layouts/application (169.3ms)
+Completed 200 OK in 209ms (Views: 176.2ms)
+
+
+Started PUT "/tulios/lists/list-1/todos/4dbf45efd01dcc1302000004" for 127.0.0.1 at Mon May 02 21:02:17 -0300 2011
+  Processing by TodosController#update as 
+  Parameters: {"nickname"=>"tulios", "id"=>"4dbf45efd01dcc1302000004", "list_id"=>"list-1"}
+Rendered text template (0.0ms)
+Completed 200 OK in 39ms (Views: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:02:31 -0300 2011
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/tulios/lists
+Completed 302 Found in 16ms
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:02:31 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (8.1ms)
+Rendered lists/_list.html.slim (7.8ms)
+Rendered layouts/_logo.html.slim (5.7ms)
+Rendered layouts/_primary_menu.html.slim (7.2ms)
+Rendered layouts/_header.html.slim (22.1ms)
+Rendered layouts/_body.html.slim (4.7ms)
+Rendered layouts/_footer.html.slim (3.7ms)
+Rendered lists/index.html.slim within layouts/application (85.4ms)
+Completed 200 OK in 117ms (Views: 92.5ms)
+
+
+Started GET "/tulios/lists/list-1" for 127.0.0.1 at Mon May 02 21:02:32 -0300 2011
+  Processing by ListsController#show as HTML
+  Parameters: {"nickname"=>"tulios", "id"=>"list-1"}
+Rendered todos/_form.html.slim (9.6ms)
+Rendered todos/_todo.html.slim (10.4ms)
+Rendered layouts/_logo.html.slim (6.3ms)
+Rendered layouts/_primary_menu.html.slim (7.3ms)
+Rendered layouts/_header.html.slim (23.3ms)
+Rendered layouts/_body.html.slim (4.8ms)
+Rendered layouts/_footer.html.slim (3.8ms)
+Rendered lists/show.html.slim within layouts/application (90.6ms)
+Completed 200 OK in 215ms (Views: 97.5ms)
+
+
+Started PUT "/tulios/lists/list-1/todos/4dbf45f5d01dcc1302000005" for 127.0.0.1 at Mon May 02 21:02:34 -0300 2011
+  Processing by TodosController#update as 
+  Parameters: {"nickname"=>"tulios", "id"=>"4dbf45f5d01dcc1302000005", "list_id"=>"list-1"}
+Rendered text template (0.0ms)
+Completed 200 OK in 36ms (Views: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:02:36 -0300 2011
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/tulios/lists
+Completed 302 Found in 16ms
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:02:36 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (8.3ms)
+Rendered lists/_list.html.slim (8.0ms)
+Rendered layouts/_logo.html.slim (5.8ms)
+Rendered layouts/_primary_menu.html.slim (7.2ms)
+Rendered layouts/_header.html.slim (22.2ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (3.8ms)
+Rendered lists/index.html.slim within layouts/application (86.5ms)
+Completed 200 OK in 121ms (Views: 93.4ms)
+
+
+Started GET "/tulios/lists/list-1" for 127.0.0.1 at Mon May 02 21:02:37 -0300 2011
+  Processing by ListsController#show as HTML
+  Parameters: {"nickname"=>"tulios", "id"=>"list-1"}
+Rendered todos/_form.html.slim (8.8ms)
+Rendered todos/_todo.html.slim (10.3ms)
+Rendered layouts/_logo.html.slim (6.2ms)
+Rendered layouts/_primary_menu.html.slim (7.1ms)
+Rendered layouts/_header.html.slim (22.3ms)
+Rendered layouts/_body.html.slim (4.8ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered lists/show.html.slim within layouts/application (86.1ms)
+Completed 200 OK in 126ms (Views: 93.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Mon May 02 21:05:33 -0300 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:05:33 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.4ms)
+Rendered layouts/_primary_menu.html.slim (6.9ms)
+Rendered layouts/_header.html.slim (109.3ms)
+Rendered layouts/_body.html.slim (4.7ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered home/index.html.slim within layouts/application (146.6ms)
+Completed 200 OK in 155ms (Views: 154.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:05:52 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.3ms)
+Rendered layouts/_primary_menu.html.slim (6.3ms)
+Rendered layouts/_header.html.slim (22.1ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered home/index.html.slim within layouts/application (56.1ms)
+Completed 200 OK in 64ms (Views: 63.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:06:51 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (5.8ms)
+Rendered layouts/_primary_menu.html.slim (6.4ms)
+Rendered layouts/_header.html.slim (21.5ms)
+Rendered layouts/_body.html.slim (4.7ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered home/index.html.slim within layouts/application (136.6ms)
+Completed 200 OK in 144ms (Views: 143.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:09:25 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.6ms)
+Rendered layouts/_primary_menu.html.slim (6.3ms)
+Rendered layouts/_header.html.slim (22.4ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered home/index.html.slim within layouts/application (56.6ms)
+Completed 200 OK in 64ms (Views: 63.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:10:06 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (5.9ms)
+Rendered layouts/_primary_menu.html.slim (6.5ms)
+Rendered layouts/_header.html.slim (21.6ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered home/index.html.slim within layouts/application (54.3ms)
+Completed 200 OK in 62ms (Views: 61.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:11:50 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (88.4ms)
+Rendered layouts/_primary_menu.html.slim (7.6ms)
+Rendered layouts/_header.html.slim (105.5ms)
+Rendered layouts/_body.html.slim (5.0ms)
+Rendered layouts/_footer.html.slim (4.8ms)
+Rendered home/index.html.slim within layouts/application (141.9ms)
+Completed 200 OK in 149ms (Views: 149.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:12:59 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.3ms)
+Rendered layouts/_primary_menu.html.slim (6.9ms)
+Rendered layouts/_header.html.slim (24.5ms)
+Rendered layouts/_body.html.slim (4.8ms)
+Rendered layouts/_footer.html.slim (4.6ms)
+Rendered home/index.html.slim within layouts/application (60.8ms)
+Completed 200 OK in 75ms (Views: 74.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:13:37 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.8ms)
+Rendered layouts/_primary_menu.html.slim (6.8ms)
+Rendered layouts/_header.html.slim (23.0ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered home/index.html.slim within layouts/application (58.8ms)
+Completed 200 OK in 66ms (Views: 65.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:13:46 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (5.9ms)
+Rendered layouts/_primary_menu.html.slim (6.2ms)
+Rendered layouts/_header.html.slim (21.7ms)
+Rendered layouts/_body.html.slim (4.5ms)
+Rendered layouts/_footer.html.slim (3.9ms)
+Rendered home/index.html.slim within layouts/application (55.7ms)
+Completed 200 OK in 63ms (Views: 62.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:13:50 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.0ms)
+Rendered layouts/_primary_menu.html.slim (6.7ms)
+Rendered layouts/_header.html.slim (21.9ms)
+Rendered layouts/_body.html.slim (4.8ms)
+Rendered layouts/_footer.html.slim (3.8ms)
+Rendered home/index.html.slim within layouts/application (57.5ms)
+Completed 200 OK in 65ms (Views: 64.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:13:54 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (7.4ms)
+Rendered layouts/_primary_menu.html.slim (10.1ms)
+Rendered layouts/_header.html.slim (27.0ms)
+Rendered layouts/_body.html.slim (5.6ms)
+Rendered layouts/_footer.html.slim (4.0ms)
+Rendered home/index.html.slim within layouts/application (142.8ms)
+Completed 200 OK in 150ms (Views: 149.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:16:10 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.1ms)
+Rendered layouts/_primary_menu.html.slim (7.2ms)
+Rendered layouts/_header.html.slim (22.9ms)
+Rendered layouts/_body.html.slim (5.0ms)
+Rendered layouts/_footer.html.slim (4.8ms)
+Rendered home/index.html.slim within layouts/application (59.6ms)
+Completed 200 OK in 68ms (Views: 67.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:16:16 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.1ms)
+Rendered layouts/_primary_menu.html.slim (6.4ms)
+Rendered layouts/_header.html.slim (21.8ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (3.9ms)
+Rendered home/index.html.slim within layouts/application (57.2ms)
+Completed 200 OK in 65ms (Views: 64.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:17:45 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.slim within layouts/application (17.0ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined local variable or method `login_with_twitter' for #<#<Class:0x102e60480>:0x102e5ad78>):
+    1: = link_to "/auth/twitter", :class => login_with_twitter do
+    2:   span Login with Twitter
+    3: 
+    4: .front_page style="text-align: center; line-height: 3.5em;"                        
+  app/views/home/index.html.slim:1:in `_app_views_home_index_html_slim___220054950_2171777780_0'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:17:50 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.1ms)
+Rendered layouts/_primary_menu.html.slim (6.4ms)
+Rendered layouts/_header.html.slim (22.5ms)
+Rendered layouts/_body.html.slim (4.7ms)
+Rendered layouts/_footer.html.slim (3.8ms)
+Rendered home/index.html.slim within layouts/application (58.7ms)
+Completed 200 OK in 66ms (Views: 65.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:18:28 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (7.0ms)
+Rendered layouts/_primary_menu.html.slim (7.0ms)
+Rendered layouts/_header.html.slim (28.3ms)
+Rendered layouts/_body.html.slim (5.7ms)
+Rendered layouts/_footer.html.slim (4.4ms)
+Rendered home/index.html.slim within layouts/application (184.8ms)
+Completed 200 OK in 202ms (Views: 201.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:18:43 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (8.8ms)
+Rendered layouts/_primary_menu.html.slim (8.2ms)
+Rendered layouts/_header.html.slim (28.1ms)
+Rendered layouts/_body.html.slim (6.9ms)
+Rendered layouts/_footer.html.slim (4.7ms)
+Rendered home/index.html.slim within layouts/application (80.7ms)
+Completed 200 OK in 93ms (Views: 92.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:18:51 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (10.6ms)
+Rendered layouts/_primary_menu.html.slim (7.0ms)
+Rendered layouts/_header.html.slim (28.0ms)
+Rendered layouts/_body.html.slim (4.9ms)
+Rendered layouts/_footer.html.slim (4.1ms)
+Rendered home/index.html.slim within layouts/application (70.7ms)
+Completed 200 OK in 84ms (Views: 83.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:19:33 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (5.8ms)
+Rendered layouts/_primary_menu.html.slim (90.3ms)
+Rendered layouts/_header.html.slim (105.2ms)
+Rendered layouts/_body.html.slim (5.4ms)
+Rendered layouts/_footer.html.slim (4.3ms)
+Rendered home/index.html.slim within layouts/application (141.2ms)
+Completed 200 OK in 149ms (Views: 148.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:19:44 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (5.9ms)
+Rendered layouts/_primary_menu.html.slim (6.6ms)
+Rendered layouts/_header.html.slim (21.7ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (3.9ms)
+Rendered home/index.html.slim within layouts/application (56.5ms)
+Completed 200 OK in 64ms (Views: 63.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:19:54 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (6.0ms)
+Rendered layouts/_primary_menu.html.slim (6.3ms)
+Rendered layouts/_header.html.slim (21.6ms)
+Rendered layouts/_body.html.slim (4.9ms)
+Rendered layouts/_footer.html.slim (4.0ms)
+Rendered home/index.html.slim within layouts/application (57.4ms)
+Completed 200 OK in 65ms (Views: 64.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:20:24 -0300 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_logo.html.slim (7.1ms)
+Rendered layouts/_primary_menu.html.slim (6.2ms)
+Rendered layouts/_header.html.slim (23.6ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (4.0ms)
+Rendered home/index.html.slim within layouts/application (72.3ms)
+Completed 200 OK in 82ms (Views: 81.7ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Mon May 02 21:20:30 -0300 2011
+
+
+Started GET "/auth/twitter/callback?oauth_token=MFSp9OdQJqtSboRRfuYtuptpG127OzYmnkICFtJE&oauth_verifier=MZazp9nS0olI4VaYh4Y99pLK6PFIxsLAHVNeawTpEc" for 127.0.0.1 at Mon May 02 21:20:32 -0300 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"oauth_verifier"=>"MZazp9nS0olI4VaYh4Y99pLK6PFIxsLAHVNeawTpEc", "oauth_token"=>"MFSp9OdQJqtSboRRfuYtuptpG127OzYmnkICFtJE", "provider"=>"twitter"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:20:34 -0300 2011
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/tulios/lists
+Completed 302 Found in 16ms
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:20:34 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (8.5ms)
+Rendered lists/_list.html.slim (7.8ms)
+Rendered layouts/_logo.html.slim (5.9ms)
+Rendered layouts/_primary_menu.html.slim (7.3ms)
+Rendered layouts/_header.html.slim (22.7ms)
+Rendered layouts/_body.html.slim (5.3ms)
+Rendered layouts/_footer.html.slim (3.9ms)
+Rendered lists/index.html.slim within layouts/application (91.5ms)
+Completed 200 OK in 203ms (Views: 99.5ms)
+
+
+Started GET "/tulios/lists/list-1" for 127.0.0.1 at Mon May 02 21:20:39 -0300 2011
+  Processing by ListsController#show as HTML
+  Parameters: {"nickname"=>"tulios", "id"=>"list-1"}
+Rendered todos/_form.html.slim (9.2ms)
+Rendered todos/_todo.html.slim (10.3ms)
+Rendered layouts/_logo.html.slim (6.7ms)
+Rendered layouts/_primary_menu.html.slim (7.9ms)
+Rendered layouts/_header.html.slim (24.2ms)
+Rendered layouts/_body.html.slim (5.1ms)
+Rendered layouts/_footer.html.slim (4.3ms)
+Rendered lists/show.html.slim within layouts/application (92.9ms)
+Completed 200 OK in 217ms (Views: 99.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 21:20:43 -0300 2011
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/tulios/lists
+Completed 302 Found in 16ms
+
+
+Started GET "/tulios/lists" for 127.0.0.1 at Mon May 02 21:20:43 -0300 2011
+  Processing by ListsController#index as HTML
+  Parameters: {"nickname"=>"tulios"}
+Rendered lists/_form.html.slim (9.4ms)
+Rendered lists/_list.html.slim (8.1ms)
+Rendered layouts/_logo.html.slim (5.8ms)
+Rendered layouts/_primary_menu.html.slim (6.9ms)
+Rendered layouts/_header.html.slim (21.7ms)
+Rendered layouts/_body.html.slim (4.6ms)
+Rendered layouts/_footer.html.slim (4.2ms)
+Rendered lists/index.html.slim within layouts/application (88.6ms)
+Completed 200 OK in 206ms (Views: 95.8ms)

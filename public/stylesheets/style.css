@@ -17,6 +17,22 @@
 
 .error {
   background-color: #A12E14; /*#CC2C00;*/
+}                  
+
+.login_with_twitter {
+	display: block;
+	margin-top: 10px;
+	background: url("/images/twitter_signin.png") no-repeat scroll 0 0 transparent;
+	height: 23px;
+	width: 150;
+}
+
+.login_with_twitter:hover {
+	background-position: left -23px;
+}
+                     
+.login_with_twitter:active {
+	background-position: left -46px;
 }
 
 #wrapper {
